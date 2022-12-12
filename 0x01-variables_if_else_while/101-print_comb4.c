@@ -1,7 +1,8 @@
 #include <stdio.h>
 
 /**
- * main - returns all possible combinations of three digits 
+ * main - returns all possible combinations of three digits
+ *
  * Return: Always 0 (Success)
  */
 
@@ -17,7 +18,7 @@ int main(void)
 		{
 			for (ones = '0'; ones <= '9'; ones++)
 			{
-				if (!((ones == tens) || (tens == hundreds) || 
+				if (!((ones == tens) || (tens == hundreds) ||
 							(tens > ones) || (hundreds > tens)))
 				{
 					putchar(hundreds);
