@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * main - returns an alphabet in reverse order 
+ * main - returns the alphabets in reverse order
  * Return: Always 0 (Success)
  */
 
