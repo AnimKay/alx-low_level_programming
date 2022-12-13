@@ -2,7 +2,7 @@
 
 /**
  * _islower - entry point
- *
+ * @c : int value to be compared wit ASCII value
  * Return: 0
  */
 
