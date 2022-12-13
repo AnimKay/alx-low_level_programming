@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
  * main - prints _putcar followed by a new line
@@ -13,9 +13,9 @@ int main(void)
 
 	while (i < 8)
 	{
-		putchar(a[i]);
+		_putchar(a[i]);
 		i++;
 	}
-	putchar('\n');
+	_putchar('\n');
 	return (0);
 }
