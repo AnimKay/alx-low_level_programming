@@ -9,17 +9,27 @@
 
 int main(void)
 {
-	int pass, sum;
+	int sum = 2772;
+	int n;
 
-	srand(time(NULL));
-	sum = 0;
-
-	while (sum <= 2645)
+	srand(time(0));
+	while (sum)
 	{
-		pass = (rand() % 128);
-		sum += pass;
-		printf("%c", pass);
+		n = rand() % 100;
+		if (n <= 94)
+			n += 32;
+		else
+			continue;
+		if (sum - n == 0)
+		{
+			sum -= n;
+			printf("%c", n);
+		}
+		else if (sum - n - 32 > 0)
+		{
+			sum -= n;
+			printf("%c", n);
+		}
 	}
-	printf("%c", 2772 - sum);
 	return (0);
 }
